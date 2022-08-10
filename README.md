@@ -1,7 +1,7 @@
 Please go under edit and edit this file as needed for your project
 
 # Project Name - Grocery Management Application
-# Batch - WD.IT 02
+# Batch - WD B02 ITP 03
 ### Group Leader -
 ### Member 2 - IT21004186 - H.M.H.N Medawatta (IT21004186)
 ### Member 3 - 
