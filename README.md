@@ -2,9 +2,9 @@ Please go under edit and edit this file as needed for your project
 
 # Project Name - Grocery Management Application
 # Batch - WD B02 ITP 03
-### Group Leader -
+### Group Leader - IT21006548 - Liyanage S.D.K (IT21006548)
 ### Member 2 - IT21004186 - H.M.H.N Medawatta (IT21004186)
-### Member 3 - 
+### Member 3 - IT21002342 - Yapa D.G.A.B.S (IT21002342)
 ### Member 4 - 
 ### Member 5 - 
 ### Member 6 - 
@@ -22,7 +22,7 @@ Please go under edit and edit this file as needed for your project
 8.	Client Management
 
 
-#### Technologies used - MERN Stack
+#### Technologies used - Mongo DB( Database server ), Node js(Backend), Express js(Framework), React js(Front end), Development IDE ( Visual Studio Code)
 
 Note - The student's github account should be given in brackets e.g. (asiriRepos), this ideally should be your student id 
 
