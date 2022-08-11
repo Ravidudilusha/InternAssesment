@@ -1,7 +1,7 @@
 Please go under edit and edit this file as needed for your project
 
 # Project Name - Supermarket MAnagement System
-# Batch - WD B02 ITP 03
+# Batch - WD_B02_ITP_03
 ### Group Leader - IT21006548 - Liyanage S.D.K (IT21006548)
 ### Member 2 - IT21004186 - H.M.H.N Medawatta (IT21004186)
 ### Member 3 - IT21002342 - Yapa D.G.A.B.S (IT21002342)
