@@ -1,6 +1,6 @@
 Please go under edit and edit this file as needed for your project
 
-# Project Name - Grocery Management Application
+# Project Name - Supermarket MAnagement System
 # Batch - WD B02 ITP 03
 ### Group Leader - IT21006548 - Liyanage S.D.K (IT21006548)
 ### Member 2 - IT21004186 - H.M.H.N Medawatta (IT21004186)
