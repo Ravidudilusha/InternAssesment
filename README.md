@@ -6,8 +6,8 @@ Please go under edit and edit this file as needed for your project
 ### Member 2 - IT21004186 - H.M.H.N Medawatta (IT21004186)
 ### Member 3 - IT21002342 - Yapa D.G.A.B.S (IT21002342)
 ### Member 4 - IT21060380-Lakshan P.R.D(IT21060380)
-### Member 5 - 
-### Member 6 - 
+### Member 5 - IT21446030 - Fernando W.C.S (IT21446030)
+### Member 6 - IT21446108 - Fernando W.A.M (IT21446108)
 ### Member 7 - 
 ### Member 8 - 
 
