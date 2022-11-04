@@ -26,14 +26,14 @@ export default function Update(){
       })
   },[])
 
-  const sendDataToAPI =()=>{
+  function sendDataToAPI(){
       const data = {name,email,password,Mobile,position}
       axios.put(`http://localhost:8080/update/${id}`,data)
       .then((res)=>{
           alert("Update Successful");  
       })
       .catch((err)=>{
-          alert("Update Unsuccessful");
+          alert(err);
       })
   };
 
@@ -45,7 +45,7 @@ export default function Update(){
         <div className="container">
           <Header/>
           <h1 className='head'>EditStaff</h1>
-            <form>
+            <form onSubmit={sendDataToAPI}>
             <div className="form-group">
           <label className="name">name</label>
           <input type="text" className="form-control" name='name' id="name" placeholder="Enter name" value={name} onChange={(e)=>setname(e.target.value)} required/>
@@ -67,7 +67,7 @@ export default function Update(){
           <input type="text" className="form-control" name='position' id="position" placeholder="Enter status" value={position} onChange={(e)=>setposition(e.target.value)} required/>
            </div>
         
-    <button type="submit" className="btn btn-danger" onClick={sendDataToAPI}>Update
+    <button type="submit" className="btn btn-danger" >Update
     &nbsp;
     </button>
 </form>
