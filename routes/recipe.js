@@ -6,11 +6,11 @@ const jwt =require("jsonwebtoken");
 
 
 
-let staff = require("../models/staff");
+let recipe = require("../models/recipeModel");
 
 
 router.get('/get',(req,res) =>{
-    staff.find().exec((err,staff) => {
+    recipe.find().exec((err,recipe) => {
         if(err){
             return res.status(400).json({
                 error:err
@@ -18,7 +18,7 @@ router.get('/get',(req,res) =>{
         }
         return res.status(200).json({
             success:true,
-            existingStaff:staff
+            existingrecipe:recipe
         });
     });
 });
@@ -26,12 +26,12 @@ router.get('/get',(req,res) =>{
 
 
 router.put("/update/:id",(req,res) => {
-    staff.findByIdAndUpdate(
+    recipe.findByIdAndUpdate(
     req.params.id,
     {
         $set:req.body
     },
-    (err,staff)=>{
+    (err,recipe)=>{
         if(err){
          return res.status(400).json({error:err});
         }
@@ -45,13 +45,13 @@ router.put("/update/:id",(req,res) => {
 
 
 router.delete("/delete/:id",(req,res) =>{
-    staff.findByIdAndRemove(req.params.id).exec((err,deletedStaff)=>{
+    recipe.findByIdAndRemove(req.params.id).exec((err,deletedrecipe)=>{
         if(err) return res.status(400).json({
             message:"Delete unsuccesful",err
         });
 
         return res.json({
-            message:"Delete Succesful",deletedStaff
+            message:"Delete Succesful",deletedrecipe
         });
     });
 
@@ -59,15 +59,15 @@ router.delete("/delete/:id",(req,res) =>{
 });
 
 router.get("/get/:id",(req,res) =>{
-    let staffid=req.params.id;
-    staff.findById(staffid,(err,staff)=>{
+    let recipeid=req.params.id;
+    recipe.findById(recipeid,(err,recipe)=>{
         if(err){
             return res.status(400).json({success:false,err});
         }
 
         return res.status(200).json({
             success:true,
-            staff
+            recipe
     });
 });
 });
