@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 
 
-class  Header extends Component{
-render(){
+
+export default function Header(){
+
+  function refreshPage() {
+    window.location.reload();
+  }
+
     return(
       <nav className="navbar navbar-expand-lg bg-danger">
       <div className="container-fluid">
@@ -12,16 +17,10 @@ render(){
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/report">Overview</a>
+              <a className="nav-link active" aria-current="page" href="/home">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/add">Add Staff</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/edit">Edit Staff</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="EReport" >Reports</a>
+              <a className="nav-link" button onClick={ refreshPage } >Refresh</a>
             </li>
           </ul>
         </div>
@@ -29,5 +28,3 @@ render(){
     </nav>
     )
 }
-}
-export default Header;

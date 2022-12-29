@@ -10,7 +10,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import store from "./store/store";
+
 import {Provider}from "react-redux";
 
 
@@ -18,9 +18,7 @@ axios.defaults.baseURL='http://localhost:8080/';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-    <Provider store={store}>
     <App />
-    </Provider>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
